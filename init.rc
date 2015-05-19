@@ -427,6 +427,7 @@ on boot
     setprop system_init.startsurfaceflinger 0
 
     start sysinit
+    on property:cm.filesystem.ready=1
 
     class_start core
     class_start main
